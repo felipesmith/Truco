@@ -1,14 +1,3 @@
-USE [master]
-GO
-
-CREATE DATABASE [Truco]
- CONTAINMENT = NONE
- ON  PRIMARY 
-( NAME = N'Truco', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\Truco.mdf' , SIZE = 5120KB , MAXSIZE = 51200KB , FILEGROWTH = 5120KB )
- LOG ON 
-( NAME = N'Truco_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\Truco_log.ldf' , SIZE = 1280KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
-GO
-
 USE [Truco]
 GO
 
@@ -17,7 +6,7 @@ CREATE TABLE Jugadores (
 	Email varchar(50) NOT NULL,
 	Apodo varchar(50) NOT NULL,
 	Categoria varchar(20) NOT NULL,
-	Contraseña varchar(50) NOT NULL,
+	ContraseÃ±a varchar(50) NOT NULL,
 	CantidadPartidas int,
 	Puntos int
 );
