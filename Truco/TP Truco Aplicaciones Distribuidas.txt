@@ -1,0 +1,76 @@
+﻿Clases :
+
+
+- Controlador
+
+
+- Jugador
+  .ID
+  .Mail
+  .Apodo
+  .Categoría
+  .Contraseña
+
+
+- Modalidad (¿Herencia a Libre o Cerrada? Libre además puede ser Individual o en Pareja)
+
+
+        
+
+
+- Partida
+  Collection de Jugador
+- Pareja
+  Collection de Jugador
+
+
+- Grupo (Jugador, Pareja y Grupo son lo mismo pero con más cantidad de Jugadores)
+  .ID
+  .Collection de Jugador
+  .Administrador
+  .Nombre
+
+
+
+
+- Carta
+  .Valor
+  .Palo
+  .Rango
+
+
+- Mano
+  .Collection de Carta
+
+
+- Servicio Central (Sería el Controlador)
+  .Collection de Jugador
+  .Collection de Carta
+  .Collection de Grupo
+  .Registro()
+  .Login()
+  .CrearGrupo()
+  .CrearPartida()
+  .RepartirCartas()
+  .ControlarEnvites()
+  .ControlarBaza()
+  .RegistrarPuntos()
+  .RegistrarResultado()
+  .InformarResulado()
+
+
+-Interfaz de Juego
+- ¿Observer para actualizar?
+- Bussines Delegate
+- Unicast Remote Object
+- Remote[a]
+
+
+A definir:
+  Ranking
+  ¿Una mano es una ronda o una mano es las 3 cartas de un jugador en cada ronda?
+
+
+
+
+[a]Estas ultimas ni idea
